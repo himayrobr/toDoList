@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/components/section.js"></script>
+    <title>Check list</title>
 </head>
 <body>
-    <div class="front">
-        <div class="just">
-            <h1>just do it.</h1>
-            <div class="confirmar">
-                <input type="Search" id="search" placeholder="Add a task" >
-                <button>i got this!</button>
-            </div> 
-            <div class="datetime">
-        </div>
-    </div>
-</div>
-<div>
-    <h3>examen javascript</h3>
-        <img src="img1.jpg" alt="">
-        <img src="img2.jpg" alt="">
-    </div>
+    <main class="main">
+        <section class="section__search">
+            <p>Just do it.</p>
+            <div class="search">
+                <input id="input__search" type="text" placeholder="Add a task.">
+                <button id="search__button" type="submit">I got this!</button>
+            </div>
+        </section>
+        <section class="section__task">
+            <span class="date" id="current__date" ></span>
 
+            <!-- <article class="tasks">
+                <p>Examen JavaScript</p>
+                <div class="icons">
+                    <img id="check" src="images/check-circle-svgrepo-com.svg" alt="">
+                    <div class="circle__trash">
+                        <img id="trash" src="images/trash-svgrepo-com.svg" alt="">
+                    </div>
+                </div>
+            </article> -->
 
+        </section>
+    </main>
 </body>
 </html>
